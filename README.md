@@ -82,6 +82,14 @@ which are not, and which are in need of repair. Understanding which ones will fa
         functional needs repair - Works, but needs repair
         non functional - The water pump does not work
 
+* I checked the distribution of the data and note that there are several missing values for the min  of the variables. This refers to the existence of  missing values that have to deal with before continuing with the models.  I remove them now because the same values null values or dublicated values have no effect on the goal, and simplifying the data makes it easier to run our models.
+  
+* The training set contains 59400 observations and 41 columns.
+The column **status_group**  shows the label for each pump, the other 40 variables correspond to the characteristics, 10 of which are numeric and the rest are categorical.
 
+* The train data set is labeled as functional - 32259, non functional - 22824 and functional needs repair - 4317. So Given data has highly imbalanced target values.
 
+* Since the target variable is discrete, Need to use a supervised classification algorithm, which can be applied later after data preprocessing and feature engineering.
+
+* 
 
