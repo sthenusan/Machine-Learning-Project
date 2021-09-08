@@ -1,8 +1,8 @@
-### Pump It Up: Data Mining the Water Table
+## Pump It Up: Data Mining the Water Table
 
 **CS 4622 -Machine Learning Individual Project**
 
-**Project Data Source: DrivenData**
+**Project Data Source: DrivenData, Train set and train label set will be used in this project. There are 59400 water locations in the train set, with 40 features. The train labels data contains 59400 identical water points with the same train set, but only contains information about the id and status of these points.**
 
 **Goal: To predict the operating condition of waterpoints in Tanzania i.e. to determine whether the water pump is functional, non-functional or needs repair
 using machine learning technics.** 
@@ -28,4 +28,60 @@ which are not, and which are in need of repair. Understanding which ones will fa
       1. Exploratory Analysis of the Data
       2. Pre-processing of the same Data
       3. Selection of the Model and traing the model for prediction.
+      
+      
+## Data Exploration and Analysis
+
+1. First we will go through each columns one by one to explore and understand what is the contend of each columns.
+
+        Features
+                
+        amount_tsh - Amount of water to pump
+        date_recorded - Date of data insertion
+        funder - Who founded the well
+        gps_height - Altitude of the well
+        installer - Organization that installed it
+        longitude - GPS coordinates
+        latitude - GPS coordinates
+        wpt_name - Pump name (if it has one)
+        num_private - Number
+        basin - Geographic basin
+        subvillage - Geographical location
+        region - Geographic location
+        region_code - Geographic location (in code)
+        district_code - Geographic location (in code)
+        lga - Geographical location
+        ward - Geographical location
+        population - Population by the well
+        public_meeting - True / False
+        recorded_by - Group entering this data
+        scheme_management - Who manages the pump
+        scheme_name - Who runs the pump
+        permit - Whether the pump is allowed or not
+        construction_year - Year of construction of the pump
+        extraction_type - Pump extraction type
+        extraction_type_group - Pump extraction type
+        extraction_type_class - Pump extraction type
+        management - How the pump is managed
+        management_group - How the pump is managed
+        payment - Cost of water
+        payment_type - Cost of water
+        water_quality - Water quality
+        quality_group - Water quality
+        quantity - Amount of water
+        quantity_group - Amount of water
+        source - Water source
+        source_type - Water source
+        source_class - Water source
+        waterpoint_type - Pump type
+        waterpoint_type_group - Pump type
+        
+        Labels
+        
+        functional - The pump works and does not need to be repaired
+        functional needs repair - Works, but needs repair
+        non functional - The water pump does not work
+
+
+
 
