@@ -89,6 +89,7 @@ The column **status_group**  shows the label for each pump, the other 40 variabl
 * 'id', 'amount_tsh', 'gps_height', 'longitude', 'latitude', 'num_private', 'region_code', 'district_code', 'population', 'construction_year' are numeric values others are categorical values.
 
 * The train data set is labeled as functional - 32259, non functional - 22824 and functional needs repair - 4317. So Given data has highly imbalanced target values.
+* It means that we can start to estimate the 54.31% probability that any one pump in this database will work fine (that is, it is *functional*). This serves as the basis for future predictions.
 
 * Since the target variable is discrete, Need to use a supervised classification algorithm, which can be applied later after data preprocessing and feature engineering.
 
