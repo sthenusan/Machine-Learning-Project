@@ -174,3 +174,63 @@ It is obviously seen that missing values and most recent years have more functio
 This column is highly categorical column with thousands different values. So, I will take most common 20 values for future encoding.
 
 From the plots, I realize that most of the water points which funded by government are non-functional.
+
+* longitude,latitude column
+
+![image](https://user-images.githubusercontent.com/46936272/132956803-77e2f3cb-6114-4b63-addc-e4779ffc8103.png)
+
+It is obviously seen that it is written as 0 when the longtitude is unknown. Because, the zero points can seen easily in the graph above outliers and outside of Tanzania. So, i changed them to mean where median is the almost same value.
+
+* wpt_name / scheme_name / id/ region/ region_code columns
+
+When I checked the wpt_name, scheme_name and id columns, they do not have any information about functionality. So, I decide to drop them. I dropped also region_code column because region column gives more information about the region. Also, before dropping columns i check the dublicated values in dataframe.
+
+![image](https://user-images.githubusercontent.com/46936272/132956871-58c2fb27-3e13-4192-bad6-1e9ffe49b6ac.png)
+
+![image](https://user-images.githubusercontent.com/46936272/132956887-ef366253-bf18-4636-8d74-48be088f5fe5.png)
+
+Some regions has higher probability of functional water well. Klimanjaro and Arusha have Pangani basin which has higher water point between basins. It is also seen that they have higher portions for functional wells.
+
+* gps_height column
+
+![image](https://user-images.githubusercontent.com/46936272/132956978-4752da50-4a80-429e-98e9-1baec4b2d6f6.png)
+
+Gps height shows the level of the water point from sea level. There are 34% zero values but maybe 34% of the water points are at the sea level so i do not change this column now.
+
+* population column
+
+To see the most populated areas water point functionality , i choose crowded 50 values and did groupby. It shows that higher population areas have more functional water points.
+
+* date_recorded column
+Approximately 95% of the water points were recorded between 2011-2013. So, for now i do not think it contains necessary information about functionality. I drop this column for now.
+
+* num_private column
+
+This column has no information about it and also mostly have zero values. So, i drop this also.
+
+* basin column
+
+![image](https://user-images.githubusercontent.com/46936272/132957038-15fd5ea9-9882-43de-bd6a-673a7039e738.png)
+
+This column gives an idea about there is correlation between functionality and geographical water basin.
+
+* subvillage column
+This column has location value of water point regions but i already have region column. I will drop this, because it is hard to handle this nunique object values.
+
+* lga / ward columns
+
+Now I decided to keep these columns because they contain geographical location. But, I have also other location features so maybe they will be dropped later on.
+
+* public_meeting column
+
+There are some null values and I convert them to most common data.
+
+* permit column
+
+This column shows if the water point is permitted or not. There are 3056 null values for this column. I will change them to true which has higher amount.
+
+After this Columnwise analysis i have decided to change the target value to numerical value before feed the data into the model.
+
+![image](https://user-images.githubusercontent.com/46936272/132957171-57a76a9d-ae04-420a-a844-8775661aef2f.png)
+
+
