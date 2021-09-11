@@ -148,3 +148,9 @@ The column **status_group**  shows the label for each pump, the other 40 variabl
     
 * waterpoint_type / waterpoint_type_group columns
     Eventhough both have same information, I decided to keep 'waterpoint_type' which contains more detail. 
+    
+    It can be seen that waterpoint type has correlation with funtionality of water points. Such that, communal standpipe has higher possibility to have functional, although communal standpipe multiple and others have higher possibility for non-functionality.
+    
+* construction_year column
+    
+    New feature is added to the dataset. The year values are converted to decades for future encoding. Zero shows the missing values. This have majority of the data set so, it will not be changed to the mean or median, kept as new value in decades.
