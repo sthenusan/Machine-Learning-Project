@@ -83,6 +83,9 @@ which are not, and which are in need of repair. Understanding which ones will fa
         non functional - The water pump does not work
 
 * I checked the distribution of the data and note that there are several missing values for the min  of the variables. This refers to the existence of  missing values that have to deal with before continuing with the models.  I removed some of them because the same values and dublicated values have no effect on the goal, and simplifying the data makes it easier to run our models. Some of the missing values are filled using mean values.
+
+![image](https://user-images.githubusercontent.com/46936272/132957569-f79d9b16-3acc-4df9-a6b0-92a45f0369ec.png)
+
   
 * The training set contains 59400 observation records  and 41 columns.
 The column **status_group**  shows the label for each pump, the other 40 variables correspond to the characteristics, 10 of which are numeric and the rest are categorical.
@@ -98,10 +101,9 @@ The column **status_group**  shows the label for each pump, the other 40 variabl
 * scheme_management / management / management_group columns
 
     The information in these scheme_management and management columns is practically identical. Because "scheme_management" denotes who runs the water station,'management' denotes how the station is run. The'scheme_management' field has 3877 null entries, thus I'd rather preserve the'management' column. Similar information on how the water point is maintained is kept in the column 'management_group'.
-    
-    
-    
-    
+
+![image](https://user-images.githubusercontent.com/46936272/132957580-5390c41d-3eba-4f6d-a6ee-e7c3c2ce26a5.png)
+       
     To find the subgroups of 'management_group' column, I checked the 'user-group' values and saw that this column is just the grouped version of 'management'. Although 'management' has more detailed values, I decided to drop 'management_group' column. Also, to remember and check the sub-groups of the 'management_group' column, I grouped it below and saw the numbers of sub-groups (management column).
     
     
@@ -110,30 +112,37 @@ The column **status_group**  shows the label for each pump, the other 40 variabl
 * quantity / quantity_group columns
     These two columns contain same information so I decided to drop 'quantity_group' column.
     
-    
-    
+    ![image](https://user-images.githubusercontent.com/46936272/132957603-c629a6a8-ba6a-480b-a53f-48c6fe1eef00.png)
 
     It can be seen obviously that although there are enough water quantity in some wells, they are non-functional. When looking at this graph, dry quantity water points have a highly correlation with non-functionality. If the water point is dry or unknown, there is high chance thw water point is non functional. On the other hand, if the quantity is enough, there is a higher chance to find functional water points.
+    
     
 * source / source_type / source_class columns
 
     It is obvious that these three columns keep same information. so, i decided to keep just 'source' column, because it has more detailed information and I will drop others.
     
+    ![image](https://user-images.githubusercontent.com/46936272/132957622-3c43a6a2-a097-42ad-8444-7924acf8ca59.png)
     
-    
+    ![image](https://user-images.githubusercontent.com/46936272/132957654-f51214ee-b145-4abd-8753-69ef5ecfdcc3.png)
+
+
     When i look at the columns, there are lots of non-functional ground water. And, it is interesting that machine dbh and swallow well sources nearly have same functional and non-functional waterpoints.
     
+    
 * water_quality / quality_group columns
-    
-    
+        
     'water_quality' column has more unique values, so I will keep 'water_quality' and drop 'quality_group'.
+    ![image](https://user-images.githubusercontent.com/46936272/132957720-6def4cac-0799-4884-adc0-a57b55c15180.png)
+     
     
-     From the both graphs, it is seen that lots of non-functional water points have soft, good water quality.
+     From the graph, it is seen that lots of non-functional water points have soft, good water quality.
      
 * payment / payment_type columns
     
     These two columns are same so i decided to drop one of them.
     
+    ![image](https://user-images.githubusercontent.com/46936272/132957676-81aec2b7-95db-4249-b0c8-e3937aa25943.png)
+
     This feature shows us what the water cost. Mostly, there are lots of non-functioal water points as never paid for them. 
     
     
@@ -142,14 +151,17 @@ The column **status_group**  shows the label for each pump, the other 40 variabl
 
     It is obviously seen that these three columns keep same information. So, I decided to keep 'extraction_type_group' and drop others. Although, extraction_type has more unique values than extraction_type_group , some of these values are very small amount according to this big dataset. I prefered to use more compact one. Also, extraction_type_class contains less detail. So, extraction_type_group is chosen to keep.
     
-    
+    ![image](https://user-images.githubusercontent.com/46936272/132957754-552b4bc8-e30a-41a7-a29f-f36d7dcf3c9d.png)
     
     Especially, other and mono extraction types have higher change to be non-functional than functional.
     
 * waterpoint_type / waterpoint_type_group columns
     Eventhough both have same information, I decided to keep 'waterpoint_type' which contains more detail. 
     
+    ![image](https://user-images.githubusercontent.com/46936272/132957872-fa755134-9001-405e-80b9-6f3509c1a06b.png)
+
     It can be seen that waterpoint type has correlation with funtionality of water points. Such that, communal standpipe has higher possibility to have functional, although communal standpipe multiple and others have higher possibility for non-functionality.
+    
     
 * construction_year column
     
