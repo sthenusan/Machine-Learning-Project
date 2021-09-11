@@ -233,4 +233,31 @@ After this Columnwise analysis i have decided to change the target value to nume
 
 ![image](https://user-images.githubusercontent.com/46936272/132957171-57a76a9d-ae04-420a-a844-8775661aef2f.png)
 
+## Data Cleaning Process
+* The data has lots of null values, missing values and unnecessary dublicated features. Two main challanges are in this project is cleaning data and handling highly imbalanced target labels.
+* I tried to solve cleaning challange in this notebook. Some columns which have same information were dropped. Null, wrong and missing values changed to mean, median or unknown. Some values in features collected together and categorized.
+* Detailed data cleaning processes can be found in this notebook under the headings of relevant columns. It is stated that how the column was cleaned with reasons.
 
+## Explorations and analysis outcome
+* Generally higher population areas has higher number of functional wells.
+* Some areas has higher probability to find clean water especially, if they are near to good basins.
+* Darul es Salaam is one of the highest populated cities but 35% of good water quality points are non-functional.
+* Iringa is one of the important areas but it contains lots of non-functional wateer points which has soft water.
+* Mostly the wells which are funded by government are non-functional.
+* Most of water points which central government and district council installed are non-functional.
+* The most common extraction type is gravity but second is hand pumps. The efficiency of handpumps are less than commercial pumps. It shows that authorities need to focus on pumping type. It is seen that, there are many non-functional water points which belongs to gravity (which is natural force so no need to do anything expensive) as extraction type.
+* Some water points which has enough and soft water are non-function.
+* The wells which have constructed in recent years are functional then olders. And it is seen that recent years have some functional but needs repair wells. It means that if they will not be repaired recently, they will be non-functional easily.
+* There are lots of water wells which has enough water are non-functional.
+
+## Findings and resuts gathered
+* 4272 wells were dried but they have good water quality. With finding a solution to give source again these wells, they can be functional. Finding clean water sources is not the only problem, to continue to feed these sources are equaly important.
+* 2226 (7%) wells have enough and soft water but needs repair. Authorities must invest on repairing. Otherwise these will be non-functional.
+* 8035 (27%) wells has enough, good quality water but they are non-functional. This shows that authorities must work and invest on technology to pump these good sources.
+* Authorties should check again the wells which they funded.
+* New tecqniques must be found to feed dry wells and repair wells.
+
+
+## Feature Engineering proposals
+* There are lots of categorical values in funder and installer columns. I create new columns that if the value in the feature is not in first common 20 values, they were collected as 'others'. Also, there are lots of spelling mistakes in this columns which creates new unique values in these columns. I found top 100 common installer and fixed them. Then, builded new column which has categorized values.
+* Construction years are in integer format but not continuous data or year values do not make sense for model. So, I divided them decades and assumed every decade as categorical value.
