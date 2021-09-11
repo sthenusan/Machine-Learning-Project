@@ -99,11 +99,52 @@ The column **status_group**  shows the label for each pump, the other 40 variabl
 
     The information in these scheme_management and management columns is practically identical. Because "scheme_management" denotes who runs the water station,'management' denotes how the station is run. The'scheme_management' field has 3877 null entries, thus I'd rather preserve the'management' column. Similar information on how the water point is maintained is kept in the column 'management_group'.
     
+    
+    
+    
     To find the subgroups of 'management_group' column, I checked the 'user-group' values and saw that this column is just the grouped version of 'management'. Although 'management' has more detailed values, I decided to drop 'management_group' column. Also, to remember and check the sub-groups of the 'management_group' column, I grouped it below and saw the numbers of sub-groups (management column).
+    
+    
+    
        
 * quantity / quantity_group columns
     These two columns contain same information so I decided to drop 'quantity_group' column.
     
+    
+    
 
     It can be seen obviously that although there are enough water quantity in some wells, they are non-functional. When looking at this graph, dry quantity water points have a highly correlation with non-functionality. If the water point is dry or unknown, there is high chance thw water point is non functional. On the other hand, if the quantity is enough, there is a higher chance to find functional water points.
+    
+* source / source_type / source_class columns
 
+    It is obvious that these three columns keep same information. so, i decided to keep just 'source' column, because it has more detailed information and I will drop others.
+    
+    
+    
+    When i look at the columns, there are lots of non-functional ground water. And, it is interesting that machine dbh and swallow well sources nearly have same functional and non-functional waterpoints.
+    
+* water_quality / quality_group columns
+    
+    
+    'water_quality' column has more unique values, so I will keep 'water_quality' and drop 'quality_group'.
+    
+     From the both graphs, it is seen that lots of non-functional water points have soft, good water quality.
+     
+* payment / payment_type columns
+    
+    These two columns are same so i decided to drop one of them.
+    
+    This feature shows us what the water cost. Mostly, there are lots of non-functioal water points as never paid for them. 
+    
+    
+* extraction_type / extraction_type_group / extraction_type_class columns
+
+
+    It is obviously seen that these three columns keep same information. So, I decided to keep 'extraction_type_group' and drop others. Although, extraction_type has more unique values than extraction_type_group , some of these values are very small amount according to this big dataset. I prefered to use more compact one. Also, extraction_type_class contains less detail. So, extraction_type_group is chosen to keep.
+    
+    
+    
+    Especially, other and mono extraction types have higher change to be non-functional than functional.
+    
+* waterpoint_type / waterpoint_type_group columns
+    Eventhough both have same information, I decided to keep 'waterpoint_type' which contains more detail. 
