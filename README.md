@@ -154,3 +154,23 @@ The column **status_group**  shows the label for each pump, the other 40 variabl
 * construction_year column
     
     New feature is added to the dataset. The year values are converted to decades for future encoding. Zero shows the missing values. This have majority of the data set so, it will not be changed to the mean or median, kept as new value in decades.
+    ![image](https://user-images.githubusercontent.com/46936272/132955254-60247de8-bb7a-42ab-acff-a009220dee01.png)
+    
+    ![image](https://user-images.githubusercontent.com/46936272/132955298-c4e20158-0535-4106-bfc1-1976c1002c2c.png)
+
+
+It is obviously seen that missing values and most recent years have more functional water points.
+
+* installer column
+    There are lots of NaN and 0 values in this column. Firstly, I will convert them to unknown and change the spell mistakes in the data. 
+    
+    It is interesting that most of water points which central government and district council installed are non-functional. DWE has the majority of functional wells but has also many non-functional wells.
+    ![image](https://user-images.githubusercontent.com/46936272/132955391-2e6ecef1-8023-4d85-b88b-68a36f55baab.png)
+
+* funder column
+
+![image](https://user-images.githubusercontent.com/46936272/132955434-9a481b6c-7679-43ce-b291-b585f3b55e28.png)
+
+This column is highly categorical column with thousands different values. So, I will take most common 20 values for future encoding.
+
+From the plots, I realize that most of the water points which funded by government are non-functional.
