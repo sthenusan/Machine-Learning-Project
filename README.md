@@ -238,7 +238,7 @@ After this Columnwise analysis i have decided to change the target value to nume
 * I tried to solve cleaning challange in this notebook. Some columns which have same information were dropped. Null, wrong and missing values changed to mean, median or unknown. Some values in features collected together and categorized.
 * Detailed data cleaning processes can be found in this notebook under the headings of relevant columns. It is stated that how the column was cleaned with reasons.
 
-## Explorations and analysis outcome
+## Explorations and analysis outcomes
 * Generally higher population areas has higher number of functional wells.
 * Some areas has higher probability to find clean water especially, if they are near to good basins.
 * Darul es Salaam is one of the highest populated cities but 35% of good water quality points are non-functional.
@@ -250,7 +250,7 @@ After this Columnwise analysis i have decided to change the target value to nume
 * The wells which have constructed in recent years are functional then olders. And it is seen that recent years have some functional but needs repair wells. It means that if they will not be repaired recently, they will be non-functional easily.
 * There are lots of water wells which has enough water are non-functional.
 
-## Findings and resuts gathered
+## Findings and results gathered
 * 4272 wells were dried but they have good water quality. With finding a solution to give source again these wells, they can be functional. Finding clean water sources is not the only problem, to continue to feed these sources are equaly important.
 * 2226 (7%) wells have enough and soft water but needs repair. Authorities must invest on repairing. Otherwise these will be non-functional.
 * 8035 (27%) wells has enough, good quality water but they are non-functional. This shows that authorities must work and invest on technology to pump these good sources.
