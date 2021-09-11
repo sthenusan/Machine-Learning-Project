@@ -84,7 +84,7 @@ which are not, and which are in need of repair. Understanding which ones will fa
 
 * I checked the distribution of the data and note that there are several missing values for the min  of the variables. This refers to the existence of  missing values that have to deal with before continuing with the models.  I removed some of them because the same values and dublicated values have no effect on the goal, and simplifying the data makes it easier to run our models. Some of the missing values are filled using mean values.
 
-![image](https://user-images.githubusercontent.com/46936272/132957569-f79d9b16-3acc-4df9-a6b0-92a45f0369ec.png)
+    ![image](https://user-images.githubusercontent.com/46936272/132957569-f79d9b16-3acc-4df9-a6b0-92a45f0369ec.png)
 
   
 * The training set contains 59400 observation records  and 41 columns.
@@ -102,7 +102,7 @@ The column **status_group**  shows the label for each pump, the other 40 variabl
 
     The information in these scheme_management and management columns is practically identical. Because "scheme_management" denotes who runs the water station,'management' denotes how the station is run. The'scheme_management' field has 3877 null entries, thus I'd rather preserve the'management' column. Similar information on how the water point is maintained is kept in the column 'management_group'.
 
-![image](https://user-images.githubusercontent.com/46936272/132957580-5390c41d-3eba-4f6d-a6ee-e7c3c2ce26a5.png)
+    ![image](https://user-images.githubusercontent.com/46936272/132957580-5390c41d-3eba-4f6d-a6ee-e7c3c2ce26a5.png)
        
     To find the subgroups of 'management_group' column, I checked the 'user-group' values and saw that this column is just the grouped version of 'management'. Although 'management' has more detailed values, I decided to drop 'management_group' column. Also, to remember and check the sub-groups of the 'management_group' column, I grouped it below and saw the numbers of sub-groups (management column).
     
@@ -181,7 +181,7 @@ It is obviously seen that missing values and most recent years have more functio
 
 * funder column
 
-![image](https://user-images.githubusercontent.com/46936272/132955434-9a481b6c-7679-43ce-b291-b585f3b55e28.png)
+    ![image](https://user-images.githubusercontent.com/46936272/132955434-9a481b6c-7679-43ce-b291-b585f3b55e28.png)
 
 This column is highly categorical column with thousands different values. So, I will take most common 20 values for future encoding.
 
@@ -189,7 +189,7 @@ From the plots, I realize that most of the water points which funded by governme
 
 * longitude,latitude column
 
-![image](https://user-images.githubusercontent.com/46936272/132956803-77e2f3cb-6114-4b63-addc-e4779ffc8103.png)
+    ![image](https://user-images.githubusercontent.com/46936272/132956803-77e2f3cb-6114-4b63-addc-e4779ffc8103.png)
 
 It is obviously seen that it is written as 0 when the longtitude is unknown. Because, the zero points can seen easily in the graph above outliers and outside of Tanzania. So, i changed them to mean where median is the almost same value.
 
@@ -197,15 +197,15 @@ It is obviously seen that it is written as 0 when the longtitude is unknown. Bec
 
 When I checked the wpt_name, scheme_name and id columns, they do not have any information about functionality. So, I decide to drop them. I dropped also region_code column because region column gives more information about the region. Also, before dropping columns i check the dublicated values in dataframe.
 
-![image](https://user-images.githubusercontent.com/46936272/132956871-58c2fb27-3e13-4192-bad6-1e9ffe49b6ac.png)
+    ![image](https://user-images.githubusercontent.com/46936272/132956871-58c2fb27-3e13-4192-bad6-1e9ffe49b6ac.png)
 
-![image](https://user-images.githubusercontent.com/46936272/132956887-ef366253-bf18-4636-8d74-48be088f5fe5.png)
+    ![image](https://user-images.githubusercontent.com/46936272/132956887-ef366253-bf18-4636-8d74-48be088f5fe5.png)
 
 Some regions has higher probability of functional water well. Klimanjaro and Arusha have Pangani basin which has higher water point between basins. It is also seen that they have higher portions for functional wells.
 
 * gps_height column
 
-![image](https://user-images.githubusercontent.com/46936272/132956978-4752da50-4a80-429e-98e9-1baec4b2d6f6.png)
+    ![image](https://user-images.githubusercontent.com/46936272/132956978-4752da50-4a80-429e-98e9-1baec4b2d6f6.png)
 
 Gps height shows the level of the water point from sea level. There are 34% zero values but maybe 34% of the water points are at the sea level so i do not change this column now.
 
@@ -222,7 +222,7 @@ This column has no information about it and also mostly have zero values. So, i 
 
 * basin column
 
-![image](https://user-images.githubusercontent.com/46936272/132957038-15fd5ea9-9882-43de-bd6a-673a7039e738.png)
+    ![image](https://user-images.githubusercontent.com/46936272/132957038-15fd5ea9-9882-43de-bd6a-673a7039e738.png)
 
 This column gives an idea about there is correlation between functionality and geographical water basin.
 
@@ -243,7 +243,7 @@ This column shows if the water point is permitted or not. There are 3056 null va
 
 After this Columnwise analysis i have decided to change the target value to numerical value before feed the data into the model.
 
-![image](https://user-images.githubusercontent.com/46936272/132957171-57a76a9d-ae04-420a-a844-8775661aef2f.png)
+    ![image](https://user-images.githubusercontent.com/46936272/132957171-57a76a9d-ae04-420a-a844-8775661aef2f.png)
 
 ## Data Cleaning Process
 * The data has lots of null values, missing values and unnecessary dublicated features. Two main challanges are in this project is cleaning data and handling highly imbalanced target labels.
