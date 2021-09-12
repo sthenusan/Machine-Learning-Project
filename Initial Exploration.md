@@ -80,37 +80,36 @@ The label for each pump is displayed in the column **status group**, while the o
        
 ### quantity / quantity_group columns
 
-   * These two columns contain same information so I decided to drop 'quantity_group' column.
+   * Because these two columns contain the identical data, I opted to remove the 'quantity_group' column..
     
    ![image](https://user-images.githubusercontent.com/46936272/132957603-c629a6a8-ba6a-480b-a53f-48c6fe1eef00.png)
 
-   * It can be seen obviously that although there are enough water quantity in some wells, they are non-functional. When looking at this graph, dry quantity water points have a highly correlation with non-functionality. If the water point is dry or unknown, there is high chance thw water point is non functional. On the other hand, if the quantity is enough, there is a higher chance to find functional water points.
+   * It is clear that, despite the presence of sufficient water, some wells are non-functional. Dry quantity water points have a strong correlation with non-functionality in this graph. There's a good likelihood the water point is non-functional if it's dry or unknown. If the quantity is enough, however, there is a better probability of finding functional water points.
     
     
 ### source / source_type / source_class columns
 
-   * It is obvious that these three columns keep same information. so, i decided to keep just 'source' column, because it has more detailed information and I will drop others.
+   * It is self-evident that the information in these three columns is identical. As a result, I've opted to maintain only the 'source' column because it has more detailed information, and I'll omit the others.
     
    ![image](https://user-images.githubusercontent.com/46936272/132957622-3c43a6a2-a097-42ad-8444-7924acf8ca59.png)
     
    ![image](https://user-images.githubusercontent.com/46936272/132957654-f51214ee-b145-4abd-8753-69ef5ecfdcc3.png)
 
 
-   * When i look at the columns, there are lots of non-functional ground water. And, it is interesting that machine dbh and swallow well sources nearly have same functional and non-functional waterpoints.
+   * There is a lot of non-functional ground water when I look at the columns. It's also interesting to note that the functional and non-functional waterpoints for machine dbh and swallow well sources are nearly identical..
     
     
 ### water_quality / quality_group columns
         
-   * 'water_quality' column has more unique values, so I will keep 'water_quality' and drop 'quality_group'.
+   * I'll maintain 'water_quality' and drop 'quality_group' because the 'water_quality' column has more unique values.
    
    ![image](https://user-images.githubusercontent.com/46936272/132957720-6def4cac-0799-4884-adc0-a57b55c15180.png)
-     
     
-   From the graph, it is seen that lots of non-functional water points have soft, good water quality.
+   * It can be seen from the graph that many non-functional water sites have soft, good water quality.
      
 ### payment / payment_type columns
     
-   * These two columns are same so i decided to drop one of them.
+   * Because these two columns are identical, I chose to remove one of them.
     
    ![image](https://user-images.githubusercontent.com/46936272/132957676-81aec2b7-95db-4249-b0c8-e3937aa25943.png)
 
