@@ -69,39 +69,40 @@ The label for each pump is displayed in the column **status group**, while the o
 
 ### scheme_management / management / management_group columns
 
-   These scheme management and management columns contain nearly identical information. Because "scheme management" refers to who manages the water station, "management" refers to how it is run. I'd rather keep the 'management' column because the 'scheme management' field has 3877 null entries. In the column 'management group,' similar information on how the water point is managed is maintained..
+* These scheme management and management columns contain nearly identical information. Because "scheme management" refers to who manages the water station, "management" refers to how it is run. I'd rather keep the 'management' column because the 'scheme management' field has 3877 null entries. In the column 'management group,' similar information on how the water point is managed is maintained..
 
    ![image](https://user-images.githubusercontent.com/46936272/132957580-5390c41d-3eba-4f6d-a6ee-e7c3c2ce26a5.png)
     
-   I checked the 'user-group' values to locate the subgroups of the 'management_ group' column and discovered that this column is simply the grouped version of 'management'. Despite the fact that the 'management' column includes more detailed information, I choose to remove the 'management group' column. I also categorized it below and saw the numbers of sub-groups to recall and check the sub-groups of the 'management_group' column (management column)
+ * I checked the 'user-group' values to locate the subgroups of the 'management_ group' column and discovered that this column is simply the grouped version of 'management'. Despite the fact that the 'management' column includes more detailed information, I choose to remove the 'management group' column. I also categorized it below and saw the numbers of sub-groups to recall and check the sub-groups of the 'management_group' column (management column)
     
    ![image](https://user-images.githubusercontent.com/46936272/132974375-61f64032-3979-4991-90c9-0883fa138711.png)
 
        
 ### quantity / quantity_group columns
 
-   These two columns contain same information so I decided to drop 'quantity_group' column.
+   * These two columns contain same information so I decided to drop 'quantity_group' column.
     
    ![image](https://user-images.githubusercontent.com/46936272/132957603-c629a6a8-ba6a-480b-a53f-48c6fe1eef00.png)
 
-   It can be seen obviously that although there are enough water quantity in some wells, they are non-functional. When looking at this graph, dry quantity water points have a highly correlation with non-functionality. If the water point is dry or unknown, there is high chance thw water point is non functional. On the other hand, if the quantity is enough, there is a higher chance to find functional water points.
+   * It can be seen obviously that although there are enough water quantity in some wells, they are non-functional. When looking at this graph, dry quantity water points have a highly correlation with non-functionality. If the water point is dry or unknown, there is high chance thw water point is non functional. On the other hand, if the quantity is enough, there is a higher chance to find functional water points.
     
     
 ### source / source_type / source_class columns
 
-   It is obvious that these three columns keep same information. so, i decided to keep just 'source' column, because it has more detailed information and I will drop others.
+   * It is obvious that these three columns keep same information. so, i decided to keep just 'source' column, because it has more detailed information and I will drop others.
     
    ![image](https://user-images.githubusercontent.com/46936272/132957622-3c43a6a2-a097-42ad-8444-7924acf8ca59.png)
     
    ![image](https://user-images.githubusercontent.com/46936272/132957654-f51214ee-b145-4abd-8753-69ef5ecfdcc3.png)
 
 
-   When i look at the columns, there are lots of non-functional ground water. And, it is interesting that machine dbh and swallow well sources nearly have same functional and non-functional waterpoints.
+   * When i look at the columns, there are lots of non-functional ground water. And, it is interesting that machine dbh and swallow well sources nearly have same functional and non-functional waterpoints.
     
     
 ### water_quality / quality_group columns
         
-   'water_quality' column has more unique values, so I will keep 'water_quality' and drop 'quality_group'.
+   * 'water_quality' column has more unique values, so I will keep 'water_quality' and drop 'quality_group'.
+   
    ![image](https://user-images.githubusercontent.com/46936272/132957720-6def4cac-0799-4884-adc0-a57b55c15180.png)
      
     
@@ -109,110 +110,112 @@ The label for each pump is displayed in the column **status group**, while the o
      
 ### payment / payment_type columns
     
-   These two columns are same so i decided to drop one of them.
+   * These two columns are same so i decided to drop one of them.
     
    ![image](https://user-images.githubusercontent.com/46936272/132957676-81aec2b7-95db-4249-b0c8-e3937aa25943.png)
 
-   This feature shows us what the water cost. Mostly, there are lots of non-functioal water points as never paid for them. 
+   * This feature shows us what the water cost. Mostly, there are lots of non-functioal water points as never paid for them. 
     
     
 ### extraction_type / extraction_type_group / extraction_type_class columns
 
 
-   It is obviously seen that these three columns keep same information. So, I decided to keep 'extraction_type_group' and drop others. Although, extraction_type has more unique values than extraction_type_group , some of these values are very small amount according to this big dataset. I prefered to use more compact one. Also, extraction_type_class contains less detail. So, extraction_type_group is chosen to keep.
+   * It is obviously seen that these three columns keep same information. So, I decided to keep 'extraction_type_group' and drop others. Although, extraction_type has more unique values than extraction_type_group , some of these values are very small amount according to this big dataset. I prefered to use more compact one. Also, extraction_type_class contains less detail. So, extraction_type_group is chosen to keep.
     
    ![image](https://user-images.githubusercontent.com/46936272/132957754-552b4bc8-e30a-41a7-a29f-f36d7dcf3c9d.png)
     
-   Especially, other and mono extraction types have higher change to be non-functional than functional.
+   * Especially, other and mono extraction types have higher change to be non-functional than functional.
     
 ### waterpoint_type / waterpoint_type_group columns
-   Eventhough both have same information, I decided to keep 'waterpoint_type' which contains more detail. 
+   * Eventhough both have same information, I decided to keep 'waterpoint_type' which contains more detail. 
     
    ![image](https://user-images.githubusercontent.com/46936272/132957872-fa755134-9001-405e-80b9-6f3509c1a06b.png)
 
-   It can be seen that waterpoint type has correlation with funtionality of water points. Such that, communal standpipe has higher possibility to have functional, although communal standpipe multiple and others have higher possibility for non-functionality.
+   * It can be seen that waterpoint type has correlation with funtionality of water points. Such that, communal standpipe has higher possibility to have functional, although communal standpipe multiple and others have higher possibility for non-functionality.
     
     
 ### construction_year column
     
-   New feature is added to the dataset. The year values are converted to decades for future encoding. Zero shows the missing values. This have majority of the data set so, it will not be changed to the mean or median, kept as new value in decades.
+   * New feature is added to the dataset. The year values are converted to decades for future encoding. Zero shows the missing values. This have majority of the data set so, it will not be changed to the mean or median, kept as new value in decades.
+   
    ![image](https://user-images.githubusercontent.com/46936272/132955254-60247de8-bb7a-42ab-acff-a009220dee01.png)
     
    ![image](https://user-images.githubusercontent.com/46936272/132955298-c4e20158-0535-4106-bfc1-1976c1002c2c.png)
 
 
-It is obviously seen that missing values and most recent years have more functional water points.
+* It is obviously seen that missing values and most recent years have more functional water points.
 
 ### installer column
 
-   There are lots of NaN and 0 values in this column. Firstly, I will convert them to unknown and change the spell mistakes in the data. 
+   * There are lots of NaN and 0 values in this column. Firstly, I will convert them to unknown and change the spell mistakes in the data. 
     
-   It is interesting that most of water points which central government and district council installed are non-functional. DWE has the majority of functional wells but has also many non-functional wells.
+   * It is interesting that most of water points which central government and district council installed are non-functional. DWE has the majority of functional wells but has also many non-functional wells.
+   
    ![image](https://user-images.githubusercontent.com/46936272/132955391-2e6ecef1-8023-4d85-b88b-68a36f55baab.png)
 
 ### funder column
 
    ![image](https://user-images.githubusercontent.com/46936272/132955434-9a481b6c-7679-43ce-b291-b585f3b55e28.png)
 
-This column is highly categorical column with thousands different values. So, I will take most common 20 values for future encoding.
+* This column is highly categorical column with thousands different values. So, I will take most common 20 values for future encoding.
 
-From the plots, I realize that most of the water points which funded by government are non-functional.
+* From the plots, I realize that most of the water points which funded by government are non-functional.
 
 ### longitude,latitude column
 
    ![image](https://user-images.githubusercontent.com/46936272/132956803-77e2f3cb-6114-4b63-addc-e4779ffc8103.png)
 
-It is obviously seen that it is written as 0 when the longtitude is unknown. Because, the zero points can seen easily in the graph above outliers and outside of Tanzania. So, i changed them to mean where median is the almost same value.
+* It is obviously seen that it is written as 0 when the longtitude is unknown. Because, the zero points can seen easily in the graph above outliers and outside of Tanzania. So, i changed them to mean where median is the almost same value.
 
 ### wpt_name / scheme_name / id/ region/ region_code columns
 
-When I checked the wpt_name, scheme_name and id columns, they do not have any information about functionality. So, I decide to drop them. I dropped also region_code column because region column gives more information about the region. Also, before dropping columns i check the dublicated values in dataframe.
+* When I checked the wpt_name, scheme_name and id columns, they do not have any information about functionality. So, I decide to drop them. I dropped also region_code column because region column gives more information about the region. Also, before dropping columns i check the dublicated values in dataframe.
 
    ![image](https://user-images.githubusercontent.com/46936272/132956871-58c2fb27-3e13-4192-bad6-1e9ffe49b6ac.png)
 
    ![image](https://user-images.githubusercontent.com/46936272/132956887-ef366253-bf18-4636-8d74-48be088f5fe5.png)
 
-Some regions has higher probability of functional water well. Klimanjaro and Arusha have Pangani basin which has higher water point between basins. It is also seen that they have higher portions for functional wells.
+* Some regions has higher probability of functional water well. Klimanjaro and Arusha have Pangani basin which has higher water point between basins. It is also seen that they have higher portions for functional wells.
 
 ### gps_height column
 
    ![image](https://user-images.githubusercontent.com/46936272/132956978-4752da50-4a80-429e-98e9-1baec4b2d6f6.png)
 
-Gps height shows the level of the water point from sea level. There are 34% zero values but maybe 34% of the water points are at the sea level so i do not change this column now.
+* Gps height shows the level of the water point from sea level. There are 34% zero values but maybe 34% of the water points are at the sea level so i do not change this column now.
 
 ### population column
 
-To see the most populated areas water point functionality , i choose crowded 50 values and did groupby. It shows that higher population areas have more functional water points.
+* To see the most populated areas water point functionality , i choose crowded 50 values and did groupby. It shows that higher population areas have more functional water points.
 
 ### date_recorded column
-Approximately 95% of the water points were recorded between 2011-2013. So, for now i do not think it contains necessary information about functionality. I drop this column for now.
+* Approximately 95% of the water points were recorded between 2011-2013. So, for now i do not think it contains necessary information about functionality. I drop this column for now.
 
 ### num_private column
 
-This column has no information about it and also mostly have zero values. So, i drop this also.
+* This column has no information about it and also mostly have zero values. So, i drop this also.
 
 ### basin column
 
   ![image](https://user-images.githubusercontent.com/46936272/132957038-15fd5ea9-9882-43de-bd6a-673a7039e738.png)
 
-This column gives an idea about there is correlation between functionality and geographical water basin.
+* This column gives an idea about there is correlation between functionality and geographical water basin.
 
 ### subvillage column
-This column has location value of water point regions but i already have region column. I will drop this, because it is hard to handle this nunique object values.
+* This column has location value of water point regions but i already have region column. I will drop this, because it is hard to handle this nunique object values.
 
 ### lga / ward columns
 
-Now I decided to keep these columns because they contain geographical location. But, I have also other location features so maybe they will be dropped later on.
+* Now I decided to keep these columns because they contain geographical location. But, I have also other location features so maybe they will be dropped later on.
 
 ### public_meeting column
 
-There are some null values and I convert them to most common data.
+* There are some null values and I convert them to most common data.
 
 ### permit column
 
-This column shows if the water point is permitted or not. There are 3056 null values for this column. I will change them to true which has higher amount.
+* This column shows if the water point is permitted or not. There are 3056 null values for this column. I will change them to true which has higher amount.
 
-After this Columnwise analysis i have decided to change the target value to numerical value before feed the data into the model.
+* After this Columnwise analysis i have decided to change the target value to numerical value before feed the data into the model.
 
    ![image](https://user-images.githubusercontent.com/46936272/132957171-57a76a9d-ae04-420a-a844-8775661aef2f.png)
 
