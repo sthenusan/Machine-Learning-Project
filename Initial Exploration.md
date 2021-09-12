@@ -141,7 +141,13 @@ The label for each pump is displayed in the column **status group**, while the o
     
    ![image](https://user-images.githubusercontent.com/46936272/132955298-c4e20158-0535-4106-bfc1-1976c1002c2c.png)
 
-* It is clear that missing values and that recent years have shown an increase in the number of functional water points..
+* It is clear that missing values and that recent years have shown an increase in the number of functional water points.
+
+### recorded_by column
+
+![image](https://user-images.githubusercontent.com/46936272/132998302-5d689438-bdb8-467f-8c7e-c9e3746fd2c1.png)
+
+* There is only one value in the 'recorded_ by' column. Our model will not receive any information as a result of this. As a result, I also dropped it.
 
 ### installer column
 
@@ -175,6 +181,12 @@ The label for each pump is displayed in the column **status group**, while the o
 
 * Some areas have a better chance of having a functional water well. Between the basins of Klimanjaro and Arusha is the Pangani basin, which has a higher water point. They also have larger parts for functional wells, as can be seen.
 
+### amount_tsh column
+
+![image](https://user-images.githubusercontent.com/46936272/132998248-65e08ed1-1ccc-42f7-8008-68c6283e532e.png)
+
+I decided to drop this column because 70% of the column has no informative values. So, this column will not give idea to the model and i will drop it.
+
 ### gps_height column
 
    ![image](https://user-images.githubusercontent.com/46936272/132956978-4752da50-4a80-429e-98e9-1baec4b2d6f6.png)
@@ -205,6 +217,17 @@ The label for each pump is displayed in the column **status group**, while the o
 ### subvillage column
 
 * This column has location value of water point regions but i already have region column. I will drop this, because it is hard to handle this nunique object values.
+
+### district_code column
+
+  ![image](https://user-images.githubusercontent.com/46936272/132997995-6abc2227-45ba-4bf6-ad62-0ed516513d2f.png)
+
+* It includes numeric values about districts. Each district has one number.
+
+![image](https://user-images.githubusercontent.com/46936272/132998021-8c0271ad-7c25-45f1-9e30-32f68ee1f5b1.png)
+
+* It includes numeric values about districts. Each district has one number.
+
 
 ### lga / ward columns
 
