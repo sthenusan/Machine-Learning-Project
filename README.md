@@ -32,4 +32,4 @@
       4. Predict labels for test data given
 
 * The details of the initial data exploration of given test dataset and findings can be found [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Initial%20Exploration.md).
-* The details of the preprocessing and modeling details can be found in preprocess and model building can be found [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Preprocess%20and%20Model%20Building.md).
+* The details of the preprocessing and modeling details can be found [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Preprocess%20and%20Model%20Building.md).
