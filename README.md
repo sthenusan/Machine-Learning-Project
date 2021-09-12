@@ -2,13 +2,6 @@
 
 ## **CS 4622 -Machine Learning Individual Project**
 
-## **Project Data Source** 
-*DrivenData, Train set and train label set will be used in this project. There are 59400 water locations in the train set, with 40 features. The train labels data contains 59400 identical water points with the same train set, but only contains information about the id and status of these points.*
-
-## **Goal**
-*To predict the operating condition of waterpoints in Tanzania i.e. to determine whether the water pump is functional, non-functional or needs repair
-using machine learning technics.*
-
 ## **Introduction of the problem**
 
 *Currently, the Tanzanian population has very poor access to safe drinking water. 
@@ -20,6 +13,8 @@ walk several miles just to get to the nearest working groundwater pump.*
 
   ![pumping](https://user-images.githubusercontent.com/46936272/132973229-8b5c1601-3080-48b7-a71d-b9e614b4df1e.jpg) 
 
+## **Project Data Source** 
+*DrivenData, Train set and train label set will be used in this project. There are 59400 water locations in the train set, with 40 features. The train labels data contains 59400 identical water points with the same train set, but only contains information about the id and status of these points.*
 
 ### **Main Objective of the project**
 
