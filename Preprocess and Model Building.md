@@ -163,7 +163,7 @@ The **RandomForestClassifier** model gives best accuracy score among these model
 * I decided to adjust the parameters based on the tuning of the three models just mentioned.
 
 
-## Conclusions
+# Conclusions
 
 * The purpose of this study was to anticipate whether a pump will function or need to be repaired based on information about the pump, the well, its surroundings, who was in charge of it, and the date.
 
@@ -181,7 +181,7 @@ The **RandomForestClassifier** model gives best accuracy score among these model
 
 * I have selected Random Forest as the best solution. After that, I created validation results and submit it to the data driven competion.
 
-## Outcome
+# Outcome
 
 * Before make submisiion to *Data Driven*, We need to convert back out class labels from 0,1,2 to non functional, functional needs repair and functional.
 
