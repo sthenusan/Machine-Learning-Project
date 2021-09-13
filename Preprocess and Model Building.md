@@ -19,7 +19,7 @@
 
   ![image](https://user-images.githubusercontent.com/46936272/133044677-7bd69896-526f-46f3-883d-01b0e42865ca.png)
   
-* I can see from above graph that, I can start to estimate the 54.31% probability that any one pump in this database will work fine (that is, it is *functional*). This will be used to make future predictions.
+* I can see from above graph that, I can start to estimate the 54.31% probability that any one pump in this database will work fine (that is, it is functional). This will be used to make future predictions.
 
 Since our target variable is discrete, I will need a **supervised classification algorithm**, which I will apply later.
 
@@ -74,7 +74,7 @@ As I mentioned [here](https://github.com/sthenusan/ml-project-assignment/blob/ma
 ### Ordinal encoding of categorical data
 
 * This methodology was chosen to prevent having too many columns and to provide the model some logic when analyzing the features. 
-* For example, the higher the category in the variable *quality_group*, the better the water quality and the more probable the pump will perform correctly.
+* For example, the higher the category in the variable quality_group, the better the water quality and the more probable the pump will perform correctly.
 
 #### quality_group
 
@@ -99,13 +99,13 @@ As I mentioned [here](https://github.com/sthenusan/ml-project-assignment/blob/ma
 ### More improvements to the model
 
 * Following that, I'll create new variables (depending on the properties of the dataset) to better characterize the target.
-* *amount_tsh* - I developed a criteria to differentiate the pumps that work from those that don't after the exploratory analysis of the data. I'll go ahead and build a new binary variable to reflect this information.
-* *construction_year* - I then transform *construction_year* into a categorical variable containing the following decades of years: '60s',' 70s', '80s',' 90s, '00s',' 10s' and 'unknown' for unknown years.
+* amount_tsh - I developed a criteria to differentiate the pumps that work from those that don't after the exploratory analysis of the data. I'll go ahead and build a new binary variable to reflect this information.
+* construction_year - I then transform construction_year into a categorical variable containing the following decades of years: '60s',' 70s', '80s',' 90s, '00s',' 10s' and 'unknown' for unknown years.
 
 ### One-Hot encoding for categorical variables
 
 * For categorical variables where there is no order relationship, integer encoding is generally not appropriate. In these cases, special encoding can be applied where a new binary variable (with true or false values) is added for each possible category value.
-* The *One-Hot* encoding is a method of labeling which class the data belongs to and the idea is to assign 0 to the entire dimension except 1 for the class the data belongs to.
+* The One-Hot encoding is a method of labeling which class the data belongs to and the idea is to assign 0 to the entire dimension except 1 for the class the data belongs to.
 
 ### Regularization with Logistic Regression
 * In L1 Regularization, the complexity C is measured as the mean of the absolute value of the model coefficients. With it, we favor that some of the coefficients end up being 0. This can be useful to discover which of the input attributes are relevant and, in general, to obtain a model that generalizes better. L1 helps us make the selection of input attributes.
@@ -136,7 +136,7 @@ This is done independently column by column for multivariate data. Sources of th
 
 ## Model selection
 
-* I tried mulitiple models and check with the *validation set* and comapare it.
+* I tried mulitiple models and check with the validation set and comapare it.
 
 1. Decision trees - 74.61
 2. RandomForestClassifier - 80.05
@@ -187,7 +187,7 @@ The **RandomForestClassifier** model gives best accuracy score among these model
 
 # Outcome
 
-* Before make submisiion to *Data Driven*, We need to convert back out class labels from 0,1,2 to non functional, functional needs repair and functional.
+* Before make submisiion to [Data Driven](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/), We need to convert back out class labels from 0,1,2 to non functional, functional needs repair and functional.
 
 ![image](https://user-images.githubusercontent.com/46936272/133129258-d5e847c6-cfc1-4ded-9623-7b0117eba154.png)
 
