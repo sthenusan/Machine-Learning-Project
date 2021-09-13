@@ -48,7 +48,7 @@ I'll deal with data preprocessing in this section, which involves preparing and 
 
 As I mentioned [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Initial%20Exploration.md) I need to handle similar variables in the dataset to get better model.
 
-#### The following attributes
+### The following attributes
 
     - (extraction_type, extraction_type_group, extraction_type_class),
     - (water_quality, quality_group),
@@ -67,43 +67,43 @@ As I mentioned [here](https://github.com/sthenusan/ml-project-assignment/blob/ma
 
 * Because there is a strong association between the district_code and region_code, I will eliminate a variable between them. The one having the highest correlation with the target variable will be chosen. The region_code has a stronger negative connection with the goal than district_code.
 
-#### Ordinal encoding of categorical data
+### Ordinal encoding of categorical data
 
 * This methodology was chosen to prevent having too many columns and to provide the model some logic when analyzing the features. 
 * For example, the higher the category in the variable *quality_group*, the better the water quality and the more probable the pump will perform correctly.
 
-##### quality_group
+#### quality_group
 
 ![image](https://user-images.githubusercontent.com/46936272/133055948-fe9c59a4-5b0a-45ec-be49-b07eddb2504f.png)
 
-##### quantity_group
+#### quantity_group
 
 ![image](https://user-images.githubusercontent.com/46936272/133056371-e0996825-99d8-42a5-8323-f148480f6ccd.png)
 
-##### payment_type
+#### payment_type
 
 ![image](https://user-images.githubusercontent.com/46936272/133056464-4a41c3c1-af92-4daf-8df7-b79b778debbc.png)
 
-##### public_meeting
+#### public_meeting
 
 ![image](https://user-images.githubusercontent.com/46936272/133056562-2707d48f-db9f-43ef-973f-b36dec016364.png)
 
-##### permit
+#### permit
 
 ![image](https://user-images.githubusercontent.com/46936272/133056640-8b7067ca-64ca-4143-b49c-117a04b5d7b7.png)
 
-#### More improvements to the model
+### More improvements to the model
 
 * Following that, I'll create new variables (depending on the properties of the dataset) to better characterize the target.
 * *amount_tsh* - I developed a criteria to differentiate the pumps that work from those that don't after the exploratory analysis of the data. I'll go ahead and build a new binary variable to reflect this information.
 * *construction_year* - I then transform *construction_year* into a categorical variable containing the following decades of years: '60s',' 70s', '80s',' 90s, '00s',' 10s' and 'unknown' for unknown years.
 
-#### One-Hot encoding for categorical variables
+### One-Hot encoding for categorical variables
 
 * For categorical variables where there is no order relationship, integer encoding is generally not appropriate. In these cases, special encoding can be applied where a new binary variable (with true or false values) is added for each possible category value.
 * The *One-Hot* encoding is a method of labeling which class the data belongs to and the idea is to assign 0 to the entire dimension except 1 for the class the data belongs to.
 
-#### Regularization with Logistic Regression
+### Regularization with Logistic Regression
 * In L1 Regularization, the complexity C is measured as the mean of the absolute value of the model coefficients. With it, we favor that some of the coefficients end up being 0. This can be useful to discover which of the input attributes are relevant and, in general, to obtain a model that generalizes better. L1 helps us make the selection of input attributes.
 
 * After these processes, I export training and testing data set.
@@ -117,14 +117,14 @@ As I mentioned [here](https://github.com/sthenusan/ml-project-assignment/blob/ma
 
 ![image](https://user-images.githubusercontent.com/46936272/133087384-10f45308-e5f5-4e4a-b295-2f27c51cbc9a.png)
 
-#### Standard Scaling
+### Standard Scaling
 
 * It's a technique for transforming your data into a distribution with a mean of 0 and a standard deviation of 1.
 This is done independently column by column for multivariate data. Sources of the information [this](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)
 
 ![image](https://user-images.githubusercontent.com/46936272/133087855-d0094a72-a388-4c3e-85cd-d458d403982b.png)
 
-#### Principal Component Analysis
+### Principal Component Analysis
 
 * Even if it did not increase the final score, it is crucial to remark because it was not included in the model.
 
@@ -158,7 +158,7 @@ As we can see, the three best models are:
 
 The **RandomForestClassifier** model gives best accuracy score among these models.
 
-#### Tuning of models and tuning of parameters
+### Tuning of models and tuning of parameters
 
 * I decided to adjust the parameters based on the tuning of the three models just mentioned.
 
