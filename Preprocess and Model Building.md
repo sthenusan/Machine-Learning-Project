@@ -162,8 +162,16 @@ The **RandomForestClassifier** model gives best accuracy score among these model
 
 * I decided to adjust the parameters based on the tuning of the three models just mentioned.
 
+## Outcome
 
-### Conclusions
+* Before make submisiion to *Data Driven*, We need to convert back out class labels from 0,1,2 to non functional, functional needs repair and functional.
+
+![image](https://user-images.githubusercontent.com/46936272/133129258-d5e847c6-cfc1-4ded-9623-7b0117eba154.png)
+
+* Finally, using the format specified in *Submission format.csv*, I construct the file that need to submit to the *riven Data* Competition.
+
+
+## Conclusions
 
 * The purpose of this study was to anticipate whether a pump will function or need to be repaired based on information about the pump, the well, its surroundings, who was in charge of it, and the date.
 
