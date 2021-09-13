@@ -145,6 +145,9 @@ This is done independently column by column for multivariate data. Sources of th
 9. KNeighborsClassifier - 75.36
 10. GaussianNB - 75.36
 
+  ![image](https://user-images.githubusercontent.com/46936272/133127978-829a76f3-e0b6-4e53-8546-0a9df1ee61ed.png)
+
+
 As we can see, the three best models are:
 
    * **Gradient Boosting Classifier - 79.87**
