@@ -171,9 +171,9 @@ The **RandomForestClassifier** model gives best accuracy score among these model
 
 * The purpose of this study was to anticipate whether a pump will function or need to be repaired based on information about the pump, the well, its surroundings, who was in charge of it, and the date.
 
-* I have started with an Exploratory Data Analysis. Calculating the accuracy and dividing the data into numerical and categorical according to their typology. I have then identified the missing values to deal with them in the later preprocessing phase, looked for outliers, and analyzed and acted on the different correlations between some of the attributes.
+* I began by conducting an exploratory data analysis. Calculating precision and separating data into numerical and categorical categories based on their typology. I then looked for outliers, examined and acted on the different correlations between some of the variables, and detected missing data to deal with them later in the preprocessing phase.
 
-* In the next step we have done the cleaning and preprocessing of the data. I started by removing attributes that contained similar information to avoid multicollinearity. Then i have treated the missing data, made ordinal type coding for those that required it and *One-Hot* type for the others. Finally, i have created new variables that better define the target.
+* I then cleaned and preprocessed the data in the following step. To reduce multicollinearity, I started by eliminating properties that held comparable information. The missing data was then processed, with ordinal type coding for those who needed it and One-Hot type for the rest. Finally, I've added new variables to the target that better characterize it.
 
 * After the preprocessing, I have selected with Logistic Regression the 80 most important variables from a total of 90 columns. Finally, various models have been checked and the results shown in a graph, obtaining that the best ones are:
  
