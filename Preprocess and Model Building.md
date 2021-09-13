@@ -36,7 +36,7 @@ Since our target variable is discrete, I will need a **supervised classification
 
 * The correlation between construction_year and gps_height is also high, but these two variables do not have such an obvious relationship, so we will investigate it further before making any decisions.
 
-* The most associated variables in connection to *label* are:
+* The most associated variables in connection to label are:
 
 ![image](https://user-images.githubusercontent.com/46936272/133047122-b4c3ff2f-58ba-4781-b81c-c561426cebdb.png)
 
