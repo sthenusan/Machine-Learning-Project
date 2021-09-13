@@ -50,13 +50,13 @@ As I mentioned [here](https://github.com/sthenusan/ml-project-assignment/blob/ma
 
 #### The following attributes
 
-  - *(extraction_type, extraction_type_group, extraction_type_class),*
-  - *(payment, payment_type),*
-  - *(water_quality, quality_group),*
-  - *(source, source_class),*
-  - *(subvillage, region, region_code, district_code, lga, ward),*
-  - *(waterpoint_type, waterpoint_type_group)*
-  - *(scheme_name, scheme_management)*
+    - *(extraction_type, extraction_type_group, extraction_type_class),*
+    - *(payment, payment_type),*
+    - *(water_quality, quality_group),*
+    - *(source, source_class),*
+    - *(subvillage, region, region_code, district_code, lga, ward),*
+    - *(waterpoint_type, waterpoint_type_group)*
+    - *(scheme_name, scheme_management)*
 
 * they provide very similar information, which indicates that there is a high correlation between them. By leaving them, would risk an overfitting.
 
