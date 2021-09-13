@@ -95,5 +95,21 @@ As I mentioned [here](https://github.com/sthenusan/ml-project-assignment/blob/ma
 #### More improvements to the model
 
 * Following that, I'll create new variables (depending on the properties of the dataset) to better characterize the target.
+* *amount_tsh* - I developed a criteria to differentiate the pumps that work from those that don't after the exploratory analysis of the data. I'll go ahead and build a new binary variable to reflect this information.
+* *construction_year* - I then transform *construction_year* into a categorical variable containing the following decades of years: '60s',' 70s', '80s',' 90s, '00s',' 10s' and 'unknown' for unknown years.
+
+#### *One-Hot* encoding for categorical variables
+
+* For categorical variables where there is no order relationship, integer encoding is generally not appropriate. In these cases, special encoding can be applied where a new binary variable (with true or false values) is added for each possible category value.
+* The *One-Hot* encoding is a method of labeling which class the data belongs to and the idea is to assign 0 to the entire dimension except 1 for the class the data belongs to.
+
+#### Regularization with Logistic Regression
+* In L1 Regularization, the complexity C is measured as the mean of the absolute value of the model coefficients. With it, we favor that some of the coefficients end up being 0. This can be useful to discover which of the input attributes are relevant and, in general, to obtain a model that generalizes better. L1 helps us make the selection of input attributes.
+
+* After these processes, I export training and testing data set.
+
+![image](https://user-images.githubusercontent.com/46936272/133086765-10fc94d3-ca9d-4c57-81a2-d2e38ab3c26b.png)
+
+
 
 
