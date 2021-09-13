@@ -11,13 +11,17 @@
 
 ![image](https://user-images.githubusercontent.com/46936272/133043910-8e5e4d82-bfc1-4edf-b883-35d6766f2cd1.png)
 
-* I may examine the data distribution using these tables. I notice that the min of the feature variables has multiple missing values. This refers to the existence of missing values that must be addressed before moving forward with the models.
+* I examine the data distribution using these tables. I notice that the min of the feature variables has multiple missing values. This refers to the existence of missing values that must be addressed before moving forward with the models.
 
 * There are 59400 records in the training set, with 41 columns/features. The column status group displays the label for each pump, while the remaining 40 variables correspond to the attributes, with 10 being numeric and the rest being category. I'll start by looking into the numerical ones.
 
 * Next I will observe the distribution of the target variable label in train that will serve us for the calculations of our predictions.
 
   ![image](https://user-images.githubusercontent.com/46936272/133044677-7bd69896-526f-46f3-883d-01b0e42865ca.png)
+  
+* I can see from above graph that, I can start to estimate the 54.31% probability that any one pump in this database will work fine (that is, it is *functional*). This will be used to make future predictions.
+
+Since our target variable is discrete, I will need a **supervised classification algorithm**, which I will apply later.
 
 * Column wise explanation and analysis can be found [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Initial%20Exploration.md).
 
