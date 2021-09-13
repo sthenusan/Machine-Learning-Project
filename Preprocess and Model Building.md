@@ -111,5 +111,27 @@ As I mentioned [here](https://github.com/sthenusan/ml-project-assignment/blob/ma
 ![image](https://user-images.githubusercontent.com/46936272/133086765-10fc94d3-ca9d-4c57-81a2-d2e38ab3c26b.png)
 
 
+* **I am moving into the model selection and development part of the project.**
+
+**Training Data set is divided into parts for training and testing.**
+
+![image](https://user-images.githubusercontent.com/46936272/133087384-10f45308-e5f5-4e4a-b295-2f27c51cbc9a.png)
+
+#### Standard Scaling
+
+* It's a technique for transforming your data into a distribution with a mean of 0 and a standard deviation of 1.
+This is done independently column by column for multivariate data. Sources of the information [this](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)
+
+![image](https://user-images.githubusercontent.com/46936272/133087855-d0094a72-a388-4c3e-85cd-d458d403982b.png)
+
+#### Principal Component Analysis
+
+* Even if it did not increase the final score, it is crucial to remark because it was not included in the model.
+
+![image](https://user-images.githubusercontent.com/46936272/133088235-0ee4c048-219a-4519-a20e-59137daddfcd.png)
+
+## Model selection
+
+* I tried mulitiple model and tested the data set in this part. I check the different models in the *validation set* and comapare it.
 
 
