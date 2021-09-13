@@ -132,6 +132,6 @@ This is done independently column by column for multivariate data. Sources of th
 
 ## Model selection
 
-* I tried mulitiple model and tested the data set in this part. I check the different models in the *validation set* and comapare it.
+* I tried mulitiple models and check with the *validation set* and comapare it.
 
 
