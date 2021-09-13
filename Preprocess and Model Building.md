@@ -48,5 +48,22 @@ I'll deal with data preprocessing in this section, which involves preparing and 
 
 As I mentioned [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Initial%20Exploration.md) I need to handle similar variables in the dataset to get better model.
 
+#### The following attributes
 
+ - *(extraction_type, extraction_type_group, extraction_type_class),*
+ - *(payment, payment_type),*
+ - *(water_quality, quality_group),*
+ - *(source, source_class),*
+ - *(subvillage, region, region_code, district_code, lga, ward),*
+ - *(waterpoint_type, waterpoint_type_group)*
+ - *(scheme_name, scheme_management)*
+
+* they provide very similar information, which indicates that there is a high correlation between them. By leaving them, we would risk an overfitting.
+
+* What's more:
+
+   - *num_private*consists of 99% zeros and does not have a clear description, so we cannot interpret it
+   - *wpt_name* is not very informative as it has fewer values than the number of observations
+
+We will remove a variable between *district_code* and *region_code* because there is a high correlation between them. We will choose the one that has a higher correlation with the target variable. The negative correlation with the target of *region_code* is higher than that of *district_code*.
 
