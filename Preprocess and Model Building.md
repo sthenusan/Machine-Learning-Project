@@ -35,10 +35,17 @@
 
 ![image](https://user-images.githubusercontent.com/46936272/133047122-b4c3ff2f-58ba-4781-b81c-c561426cebdb.png)
 
-* The *region_code* has a higher negative linear correlation with the target variable than *district_code*. I keep the one that has it higher.
+* The region_code has a higher negative linear correlation with the target variable than district_code. I keep the one that has it higher.
 
 * All other variables have a low linear correlation with the target variable, but this could indicate a non-linear correlation.
 
+### Data preprocessing
+
+I'll deal with data preprocessing in this section, which involves preparing and optimizing data in order to run future *tests* with Machine Learning models.
+
+### Extraction of similar variables
+
+As I mentioned [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Initial%20Exploration.md) I need to handle similar variables in the dataset.
 
 
 
