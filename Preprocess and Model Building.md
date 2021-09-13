@@ -98,7 +98,7 @@ As I mentioned [here](https://github.com/sthenusan/ml-project-assignment/blob/ma
 * *amount_tsh* - I developed a criteria to differentiate the pumps that work from those that don't after the exploratory analysis of the data. I'll go ahead and build a new binary variable to reflect this information.
 * *construction_year* - I then transform *construction_year* into a categorical variable containing the following decades of years: '60s',' 70s', '80s',' 90s, '00s',' 10s' and 'unknown' for unknown years.
 
-#### *One-Hot* encoding for categorical variables
+#### One-Hot encoding for categorical variables
 
 * For categorical variables where there is no order relationship, integer encoding is generally not appropriate. In these cases, special encoding can be applied where a new binary variable (with true or false values) is added for each possible category value.
 * The *One-Hot* encoding is a method of labeling which class the data belongs to and the idea is to assign 0 to the entire dimension except 1 for the class the data belongs to.
@@ -138,27 +138,42 @@ This is done independently column by column for multivariate data. Sources of th
 2. RandomForestClassifier - 80.05
 3. GradientBoostingClassifier - 79.87
 4. LGBMClassifier - 79.01 
-5. AdaBoostClassifier - 65.6
-6. BaggingClassifier - 76.27
-7. XGBClassifier - 74.12
-8. ExtraTreesClassifier - 78.13
-9. LogisticRegression - 70.64
-10. PassiveAggressiveClassifier - 60.42
-11. RidgeClassifierCV - 70.65
-12. Perceptron - 63.1
-13. SGDClassifier - 70.44
-14. KNeighborsClassifier - 75.36
-15. LinearDiscriminantAnalysis - 75.36
-16. QuadraticDiscriminantAnalysis - 75.36
-17. BernoulliNB - 75.36
-18. GaussianNB - 75.36
+5. BaggingClassifier - 76.27
+6. XGBClassifier - 74.12
+7. ExtraTreesClassifier - 78.13
+8. LogisticRegression - 70.64
+9. KNeighborsClassifier - 75.36
+10. GaussianNB - 75.36
 
 As we can see, the three best models are:
 
-**-*Gradient Boosting Classifier* - 79.87**
+   * **Gradient Boosting Classifier - 79.87**
 
-**-*Random Forest*- 80.05**
+   * **Random Forest- 80.05**
 
-**-*Light GBM*- 79.01**
+   * **Light GBM - 79.01**
 
-The *RandomForestClassifier* model gives best accuracy score among these models.
+The **RandomForestClassifier** model gives best accuracy score among these models.
+
+#### Tuning of models and tuning of parameters
+
+* I decided to adjust the parameters based on the tuning of the three models just mentioned.
+
+
+### Conclusions
+
+* The purpose of this study was to anticipate whether a pump will function or need to be repaired based on information about the pump, the well, its surroundings, who was in charge of it, and the date.
+
+* I have started with an Exploratory Data Analysis. Calculating the accuracy and dividing the data into numerical and categorical according to their typology. I have then identified the missing values to deal with them in the later preprocessing phase, looked for outliers, and analyzed and acted on the different correlations between some of the attributes.
+
+* In the next step we have done the cleaning and preprocessing of the data. I started by removing attributes that contained similar information to avoid multicollinearity. Then i have treated the missing data, made ordinal type coding for those that required it and *One-Hot* type for the others. Finally, i have created new variables that better define the target.
+
+* After the preprocessing, I have selected with Logistic Regression the 80 most important variables from a total of 90 columns. Finally, various models have been checked and the results shown in a graph, obtaining that the best ones are:
+ 
+    * **Gradient Boosting Classifier**
+
+    * **Random Forest**
+
+    * **Light GBM**
+
+* I have selected Random Forest as the best solution. After that, I created validation results and submit it to the data driven competion.
