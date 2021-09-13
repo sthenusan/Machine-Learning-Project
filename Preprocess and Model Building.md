@@ -50,13 +50,13 @@ As I mentioned [here](https://github.com/sthenusan/ml-project-assignment/blob/ma
 
 #### The following attributes
 
-    - *(extraction_type, extraction_type_group, extraction_type_class),*
-    - *(payment, payment_type),*
-    - *(water_quality, quality_group),*
-    - *(source, source_class),*
-    - *(subvillage, region, region_code, district_code, lga, ward),*
-    - *(waterpoint_type, waterpoint_type_group)*
-    - *(scheme_name, scheme_management)*
+    - (extraction_type, extraction_type_group, extraction_type_class),
+    - (water_quality, quality_group),
+    - (waterpoint_type, waterpoint_type_group)
+    - (scheme_name, scheme_management)
+    - (source, source_class),
+    - (subvillage, region, region_code, district_code, lga, ward),
+    - (payment, payment_type),
 
 * they provide very similar information, which indicates that there is a high correlation between them. By leaving them, would risk an overfitting.
 
@@ -66,3 +66,34 @@ As I mentioned [here](https://github.com/sthenusan/ml-project-assignment/blob/ma
    - wpt_name is not very informative as it has fewer values than the number of observations
 
 * Because there is a strong association between the district_code and region_code, I will eliminate a variable between them. The one having the highest correlation with the target variable will be chosen. The region_code has a stronger negative connection with the goal than district_code.
+
+#### Ordinal encoding of categorical data
+
+* This methodology was chosen to prevent having too many columns and to provide the model some logic when analyzing the features. 
+* For example, the higher the category in the variable *quality_group*, the better the water quality and the more probable the pump will perform correctly.
+
+##### quality_group
+
+![image](https://user-images.githubusercontent.com/46936272/133055948-fe9c59a4-5b0a-45ec-be49-b07eddb2504f.png)
+
+##### quantity_group
+
+![image](https://user-images.githubusercontent.com/46936272/133056371-e0996825-99d8-42a5-8323-f148480f6ccd.png)
+
+##### payment_type
+
+![image](https://user-images.githubusercontent.com/46936272/133056464-4a41c3c1-af92-4daf-8df7-b79b778debbc.png)
+
+##### public_meeting
+
+![image](https://user-images.githubusercontent.com/46936272/133056562-2707d48f-db9f-43ef-973f-b36dec016364.png)
+
+##### permit
+
+![image](https://user-images.githubusercontent.com/46936272/133056640-8b7067ca-64ca-4143-b49c-117a04b5d7b7.png)
+
+#### More improvements to the model
+
+* Following that, I'll create new variables (depending on the properties of the dataset) to better characterize the target.
+
+
