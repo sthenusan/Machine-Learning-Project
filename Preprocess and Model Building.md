@@ -45,7 +45,7 @@ I'll deal with data preprocessing in this section, which involves preparing and 
 
 ### Extraction of similar variables
 
-As I mentioned [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Initial%20Exploration.md) I need to handle similar variables in the dataset.
+As I mentioned [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Initial%20Exploration.md) I need to handle similar variables in the dataset to get better model.
 
 
 
