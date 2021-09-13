@@ -134,4 +134,31 @@ This is done independently column by column for multivariate data. Sources of th
 
 * I tried mulitiple models and check with the *validation set* and comapare it.
 
+1. Decision trees - 74.61
+2. RandomForestClassifier - 80.05
+3. GradientBoostingClassifier - 79.87
+4. LGBMClassifier - 79.01 
+5. AdaBoostClassifier - 65.6
+6. BaggingClassifier - 76.27
+7. XGBClassifier - 74.12
+8. ExtraTreesClassifier - 78.13
+9. LogisticRegression - 70.64
+10. PassiveAggressiveClassifier - 60.42
+11. RidgeClassifierCV - 70.65
+12. Perceptron - 63.1
+13. SGDClassifier - 70.44
+14. KNeighborsClassifier - 75.36
+15. LinearDiscriminantAnalysis - 75.36
+16. QuadraticDiscriminantAnalysis - 75.36
+17. BernoulliNB - 75.36
+18. GaussianNB - 75.36
 
+As we can see, the three best models are:
+
+**-*Gradient Boosting Classifier* - 79.87**
+
+**-*Random Forest*- 80.05**
+
+**-*Light GBM*- 79.01**
+
+The *RandomForestClassifier* model gives best accuracy score among these models.
