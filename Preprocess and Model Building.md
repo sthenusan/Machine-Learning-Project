@@ -58,11 +58,11 @@ As I mentioned [here](https://github.com/sthenusan/ml-project-assignment/blob/ma
   - *(waterpoint_type, waterpoint_type_group)*
   - *(scheme_name, scheme_management)*
 
-* they provide very similar information, which indicates that there is a high correlation between them. By leaving them, we would risk an overfitting.
+* they provide very similar information, which indicates that there is a high correlation between them. By leaving them, would risk an overfitting.
 
 * What's more:
 
-   - *num_private* consists of 99% zeros and does not have a clear description, so we cannot interpret it
-   - *wpt_name* is not very informative as it has fewer values than the number of observations
+   - num_private consists of 99% zeros and does not have a clear description, so we cannot interpret it
+   - wpt_name is not very informative as it has fewer values than the number of observations
 
-Because there is a strong association between the district_code and region_code, I will eliminate a variable between them. The one having the highest correlation with the target variable will be chosen. The region_code has a stronger negative connection with the goal than district_code.
+* Because there is a strong association between the district_code and region_code, I will eliminate a variable between them. The one having the highest correlation with the target variable will be chosen. The region_code has a stronger negative connection with the goal than district_code.
