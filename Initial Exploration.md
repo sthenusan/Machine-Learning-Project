@@ -1,5 +1,5 @@
           
-# Intial Data Exploration and Analysis
+# Initial Data Exploration and Analysis
 
 1. First, we'll look over each column one by one to see what they're about and what they're meaning about.
 
