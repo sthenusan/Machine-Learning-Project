@@ -139,7 +139,7 @@ This is done independently column by column for multivariate data. Sources of th
 * I tried mulitiple models and check with the validation set and comapare it.
 
 1. Decision trees - 74.61
-2. RandomForestClassifier - 80.05
+2. RandomForestClassifier - 81.05
 3. GradientBoostingClassifier - 79.87
 4. LGBMClassifier - 79.01 
 5. BaggingClassifier - 76.27
