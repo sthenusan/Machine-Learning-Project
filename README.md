@@ -34,4 +34,4 @@
 * The details of the initial data exploration of given test dataset and findings can be found [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Initial%20Exploration.md).
 * The details of the preprocessing and modeling details can be found [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Preprocess%20and%20Model%20Building.md).
 * Final Submision file is [here](https://github.com/sthenusan/ml-project-assignment/blob/main/submission_final_RFC.csv).
-* Evidence for the Rank and Participation is given below.
+* Evidence for the Final Rank of the competition in DataDriven is given below.
