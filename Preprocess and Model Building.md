@@ -124,7 +124,7 @@ As I mentioned [here](https://github.com/sthenusan/ml-project-assignment/blob/ma
 ### Standard Scaling
 
 * It's a technique for transforming your data into a distribution with a mean of 0 and a standard deviation of 1.
-This is done independently column by column for multivariate data. Sources of the information [this](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)
+This is done independently column by column for multivariate data.
 
 ![image](https://user-images.githubusercontent.com/46936272/133087855-d0094a72-a388-4c3e-85cd-d458d403982b.png)
 
