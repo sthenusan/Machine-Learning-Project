@@ -31,7 +31,7 @@
       3. Selection of the Model and traing the model for prediction.
       4. Predict labels for test data given
 
-* The details of the initial data exploration of given test dataset and findings can be found [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Initial%20Exploration.md).
-* The details of the preprocessing and modeling details can be found [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Preprocess%20and%20Model%20Building.md).
+* The details of the initial data exploration of given test dataset and findings can be found [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Initial%20Exploration.md) and its python notebook can be found [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Notebooks/Initial%20Data%20Exploring.ipynb).
+* The details of the preprocessing and modeling details can be found [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Preprocess%20and%20Model%20Building.md) and its python notebook can be found [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Notebooks/pump-it-up%20170628x.ipynb).
 * Final Submision file is [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Submissions/submission_final_best_RFC.csv).
 * Evidence for the Final Rank of the competition in DataDriven is given below.
