@@ -33,5 +33,5 @@
 
 * The details of the initial data exploration of given test dataset and findings can be found [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Initial%20Exploration.md) and its python notebook can be found [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Notebooks/Initial%20Data%20Exploring.ipynb).
 * The details of the preprocessing and modeling details can be found [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Preprocess%20and%20Model%20Building.md) and its python notebook can be found [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Notebooks/pump-it-up%20170628x.ipynb).
-* Final Submision file is [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Submissions/submission_final_best_RFC.csv).
+* Final Submision file is [here](https://github.com/sthenusan/ml-project-assignment/blob/main/submissions/submission_best_RFC_0.8215.csv).
 * Evidence for the Final Rank of the competition in DataDriven is given below.
