@@ -139,7 +139,7 @@ This is done independently column by column for multivariate data. Sources of th
 * I tried mulitiple models and check with the validation set and comapare it.
 
 1. Decision trees - 74.61
-2. RandomForestClassifier - 81.05
+2. RandomForestClassifier - 82.05
 3. GradientBoostingClassifier - 79.87
 4. LGBMClassifier - 79.01 
 5. BaggingClassifier - 76.27
@@ -154,18 +154,20 @@ This is done independently column by column for multivariate data. Sources of th
 
 As we can see, the three best models are:
 
-   * **Gradient Boosting Classifier - 79.87**
+**-*Gradient Boosting Classifier* - 79.19**
 
-   * **Random Forest- 80.05**
+**-*Random Forest*- 82.93**
 
-   * **Light GBM - 79.01**
+**-*Light GBM*- 78.47**
 
 The **RandomForestClassifier** model gives best accuracy score among these models.
 
 ### Tuning of models and tuning of parameters
 
 * I decided to adjust the parameters based on the tuning of the three models just mentioned.
+* As shown above, Random Forest is the best model. So i use GridSearchCV to get best parameters for the Random Forest Model.
 
+![image](https://user-images.githubusercontent.com/46936272/133236070-253439fe-57cc-4569-831c-9904701a1cce.png)
 
 # Conclusions
 
