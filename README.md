@@ -33,10 +33,6 @@
 
 * The details of the initial data exploration of given test dataset and findings can be found [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Initial%20Exploration.md) and its python notebook can be found [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Notebooks/Initial%20Data%20Exploring.ipynb).
 * The details of the preprocessing and modeling details can be found [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Preprocess%20and%20Model%20Building.md) and its python notebook can be found [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Notebooks/pump-it-up%20170628x.ipynb).
-* Final Submision file is [here](https://github.com/sthenusan/ml-project-assignment/blob/main/submissions/submission_best_RFC_0.8215.csv).
-* Evidence for the Final Rank of the competition in DataDriven is given below.
-
-![Screenshot 2021-09-14 140058](https://user-images.githubusercontent.com/46936272/133364562-3237f1c5-0694-4f1f-8479-ecd9f84bda1f.png)
 
           
 # Initial Data Exploration and Analysis
@@ -510,5 +506,9 @@ The **RandomForestClassifier** model gives best accuracy score among these model
 ![image](https://user-images.githubusercontent.com/46936272/133129258-d5e847c6-cfc1-4ded-9623-7b0117eba154.png)
 
 * Finally, using the format specified in *Submission format.csv*, I construct the file that need to submit to the *Diven Data* Competition.
-* Best submission CSV file is [here](https://github.com/sthenusan/ml-project-assignment/blob/main/submissions/submission_best_RFC_0.8215.csv).
+* Best & Final submission CSV file is [here](https://github.com/sthenusan/ml-project-assignment/blob/main/submissions/submission_best_RFC_0.8215.csv).
+
+* Evidence for the Final Rank of the competition in DataDriven is given below.
+
+![Screenshot 2021-09-14 140058](https://user-images.githubusercontent.com/46936272/133364562-3237f1c5-0694-4f1f-8479-ecd9f84bda1f.png)
 
