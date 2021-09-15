@@ -504,7 +504,7 @@ The **RandomForestClassifier** model gives best accuracy score among these model
 ![image](https://user-images.githubusercontent.com/46936272/133129258-d5e847c6-cfc1-4ded-9623-7b0117eba154.png)
 
 * Finally, using the format specified in *Submission format.csv*, I construct the file that need to submit to the *Diven Data* Competition.
-* Best & Final submission CSV file is [here](https://github.com/sthenusan/ml-project-assignment/blob/main/submissions/submission_best_RFC_0.8215.csv).
+* Best & Final submission CSV file is [here](https://github.com/sthenusan/Machine-Learning-Project/blob/main/submissions/best_submision_0.8227.csv).
 
 * Evidence for the Final Rank of the competition in DataDriven is given below.
 
