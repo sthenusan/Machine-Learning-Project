@@ -31,8 +31,8 @@
       3. Selection of the Model and traing the model for prediction.
       4. Predict labels for test data given
 
-* The details and coding of the initial data exploration of the given test dataset is given as a python notebook  & can be found [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Notebooks/Initial%20Data%20Exploring.ipynb).
-* The details of the preprocessing and modeling python notebook can be found [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Notebooks/pump-it-up%20170628x.ipynb).
+* The details of the initial data exploration of the given test dataset is given as a python notebook & can be found [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Notebooks/Initial%20Data%20Exploring.ipynb).
+* The details of the preprocessing and modeling is given as a python notebook & can be found [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Notebooks/pump-it-up%20170628x.ipynb).
 
           
 # Initial Data Exploration and Analysis
@@ -312,8 +312,6 @@ I decided to drop this column because 70% of the column has no informative value
 
 # Data Preprocessing and Model Building of the Project
 
-* Even though some of the works to be mentioned here already have included in the previous [Initial Data Exploration file](https://github.com/sthenusan/ml-project-assignment/blob/main/Initial%20Exploration.md) but, I have mentioned them here also to get better understanding for the readers.
-
 * Before start the the process we need to import nesssary tools such as libraries and data for the project.
 
  ![image](https://user-images.githubusercontent.com/46936272/133043808-51f868d3-7f32-4482-9a04-53cc1fefebc4.png)
@@ -362,7 +360,7 @@ I'll deal with data preprocessing in this section, which involves preparing and 
 
 ### Extraction of similar variables
 
-As I mentioned [here](https://github.com/sthenusan/ml-project-assignment/blob/main/Initial%20Exploration.md) I need to handle similar variables in the dataset to get better model.
+As I mentioned previously, I need to handle similar variables in the dataset to get better model.
 
 ### The following attributes
 
