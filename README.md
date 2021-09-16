@@ -510,6 +510,13 @@ The **RandomForestClassifier** model gives best accuracy score among these model
 
 ![Screenshot 2021-09-16 010828- final rank](https://user-images.githubusercontent.com/46936272/133499246-93f9e10d-6e01-44c8-84d3-7bc6c691fa1b.png)
 
+### Submission History
+
+![image](https://user-images.githubusercontent.com/46936272/133547346-8e2129fa-a8d8-4b4d-ad7a-57c9ea2b67dd.png)
+
+
+### Best Submission
+
 ![Screenshot 2021-09-16 010902](https://user-images.githubusercontent.com/46936272/133499280-f7dc8657-b618-4002-a7a1-afb2894d5559.png)
 
 
