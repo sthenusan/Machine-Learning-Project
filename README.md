@@ -462,7 +462,7 @@ This is done independently column by column for multivariate data.
   ![image](https://user-images.githubusercontent.com/46936272/133127978-829a76f3-e0b6-4e53-8546-0a9df1ee61ed.png)
 
 
-As we can see, the three best models among above models are:
+As I can see, the three best models among above models are:
 
 **-*Gradient Boosting Classifier* - 79.19**
 
