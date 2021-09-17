@@ -2,6 +2,8 @@
 
 ## **CS 4622 -Machine Learning Individual Project**
 
+### Project Git Repository is [here](https://github.com/sthenusan/Machine-Learning-Project).
+
 ## **Introduction of the problem**
 
    *Currently, the Tanzanian population has very poor access to safe drinking water. 
