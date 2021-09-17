@@ -205,8 +205,6 @@ The label for each pump is displayed in the column **status group**, while the o
 
 ### longitude,latitude column
 
-   ![image](https://user-images.githubusercontent.com/46936272/132956803-77e2f3cb-6114-4b63-addc-e4779ffc8103.png)
-
 * When the longitude is unknown, it is evident that it is written as 0. Because the zero points in the graph above outliers and outside of Tanzania are plainly seen. As a result, I converted them to mean, where the median is nearly the same number.
 
 ### wpt_name / scheme_name / id/ region/ region_code columns
