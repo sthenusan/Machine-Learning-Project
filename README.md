@@ -290,7 +290,7 @@ I decided to drop this column because 70% of the column has no informative value
 * Generally higher population areas has higher number of functional wells.
 * Some areas has higher probability to find clean water especially, if they are near to good basins.
 * Darul es Salaam is one of the highest populated cities but 35% of good water quality points are non-functional.
-* Iringa is one of the important areas but it contains lots of non-functional wateer points which has soft water.
+* Iringa is one of the important areas but it contains lots of non-functional water points which has soft water.
 * Mostly the wells which are funded by government are non-functional.
 * Most of water points which central government and district council installed are non-functional.
 * The most common extraction type is gravity but second is hand pumps. The efficiency of handpumps are less than commercial pumps. It shows that authorities need to focus on pumping type. It is seen that, there are many non-functional water points which belongs to gravity (which is natural force so no need to do anything expensive) as extraction type.
