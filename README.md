@@ -307,7 +307,7 @@ I decided to drop this column because 70% of the column has no informative value
 
 
 ## Feature Engineering Proposals
-* There are lots of categorical values in funder and installer columns. I create new columns that if the value in the feature is not in first common 20 values, they were collected as 'others'. Also, there are lots of spelling mistakes in this columns which creates new unique values in these columns. I found top 100 common installer and fixed them. Then, builded new column which has categorized values.
+* There are lots of categorical values in funder and installer columns. I create new columns that if the value in the feature is not in first common 20 values, they were collected as 'others'. Also, there are lots of spelling mistakes in this columns which creates new unique values in these columns. I found top 100 common installer and fixed them. Then, created new column which has categorized values.
 * Construction years are in integer format but not continuous data or year values do not make sense for model. So, I divided them decades and assumed every decade as categorical value.
 
 # Data Preprocessing and Model Building of the Project
