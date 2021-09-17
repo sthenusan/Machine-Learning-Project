@@ -304,8 +304,8 @@ I decided to drop this column because 70% of the column has no informative value
 * 4272 wells were dried but they have good water quality. With finding a solution to give source again these wells, they can be functional. Finding clean water sources is not the only problem, to continue to feed these sources are equaly important.
 * 2226 (7%) wells have enough and soft water but needs repair. Authorities must invest on repairing. Otherwise these will be non-functional.
 * 8035 (27%) wells has enough, good quality water but they are non-functional. This shows that authorities must work and invest on technology to pump these good sources.
-* Authorties should check again the wells which they funded.
-* New tecqniques must be found to feed dry wells and repair wells.
+* Authorities should check again the wells which they funded.
+* New techniques must be found to feed dry wells and repair wells.
 
 
 ## Feature Engineering Proposals
