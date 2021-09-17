@@ -97,7 +97,7 @@ The label for each pump is displayed in the column **status group**, while the o
 'id', 'amount_tsh', 'gps_height', 'longitude', 'latitude', 'num_private', 'region_code', 'district_code', 'population', 'construction_year' are numeric values others are categorical values.
 
 * The train data set is labeled as functional - 32259, non functional - 22824 and functional needs repair - 4317. So Given data has highly imbalanced target values.
-* It means that we can start to estimate the 54.31% probability that any one pump in this database will work fine (that is, it is *functional*).This will be used to make future predictions.
+* It means that I can start to estimate the 54.31% probability that any one pump in this database will work fine (that is, it is *functional*).This will be used to make future predictions.
 
 * Due to the discrete nature of the target variable, a supervised classification technique must be used, which can be performed after data preprocessing and feature engineering.
 
@@ -312,7 +312,7 @@ I decided to drop this column because 70% of the column has no informative value
 
 # Data Preprocessing and Model Building of the Project
 
-* Before start the the process we need to import nesssary tools such as libraries and data for the project.
+* Before start the the process I need to import nesssary tools such as libraries and data for the project.
 
  ![image](https://user-images.githubusercontent.com/46936272/133043808-51f868d3-7f32-4482-9a04-53cc1fefebc4.png)
 
@@ -342,9 +342,9 @@ Since our target variable is discrete, I will need a **supervised classification
 
   ![image](https://user-images.githubusercontent.com/46936272/133046714-6cb9c881-6996-4045-aa76-616b7c2937ea.png)
   
-* The connection between district_code and region_code is pretty high, as we can see. As a result, one of them may need to be eliminated.
+* The connection between district_code and region_code is pretty high, as I can see. As a result, one of them may need to be eliminated.
 
-* The correlation between construction_year and gps_height is also high, but these two variables do not have such an obvious relationship, so we will investigate it further before making any decisions.
+* The correlation between construction_year and gps_height is also high, but these two variables do not have such an obvious relationship, so I will investigate it further before making any decisions.
 
 * The most associated variables in connection to label are:
 
@@ -376,7 +376,7 @@ As I mentioned previously, I need to handle similar variables in the dataset to 
 
 * What's more:
 
-   - num_private consists of 99% zeros and does not have a clear description, so we cannot interpret it
+   - num_private consists of 99% zeros and does not have a clear description, so I cannot interpret it
    - wpt_name is not very informative as it has fewer values than the number of observations
 
 * Because there is a strong association between the district_code and region_code, I will eliminate a variable between them. The one having the highest correlation with the target variable will be chosen. The region_code has a stronger negative connection with the goal than district_code.
@@ -418,7 +418,7 @@ As I mentioned previously, I need to handle similar variables in the dataset to 
 * The One-Hot encoding is a method of labeling which class the data belongs to and the idea is to assign 0 to the entire dimension except 1 for the class the data belongs to.
 
 ### Regularization with Logistic Regression
-* In L1 Regularization, the complexity C is measured as the mean of the absolute value of the model coefficients. With it, we favor that some of the coefficients end up being 0. This can be useful to discover which of the input attributes are relevant and, in general, to obtain a model that generalizes better. L1 helps us make the selection of input attributes.
+* In L1 Regularization, the complexity C is measured as the mean of the absolute value of the model coefficients. With it, I favor that some of the coefficients end up being 0. This can be useful to discover which of the input attributes are relevant and, in general, to obtain a model that generalizes better. L1 helps us make the selection of input attributes.
 
 * After these processes, I export training and testing data set.
 
@@ -462,7 +462,7 @@ This is done independently column by column for multivariate data.
   ![image](https://user-images.githubusercontent.com/46936272/133127978-829a76f3-e0b6-4e53-8546-0a9df1ee61ed.png)
 
 
-As we can see, the three best models are:
+As we can see, the three best models among above models are:
 
 **-*Gradient Boosting Classifier* - 79.19**
 
