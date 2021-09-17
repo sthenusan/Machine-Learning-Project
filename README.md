@@ -295,7 +295,7 @@ I decided to drop this column because 70% of the column has no informative value
 * Most of water points which central government and district council installed are non-functional.
 * The most common extraction type is gravity but second is hand pumps. The efficiency of handpumps are less than commercial pumps. It shows that authorities need to focus on pumping type. It is seen that, there are many non-functional water points which belongs to gravity (which is natural force so no need to do anything expensive) as extraction type.
 * Some water points which has enough and soft water are non-function.
-* The wells which have constructed in recent years are functional then olders. And it is seen that recent years have some functional but needs repair wells. It means that if they will not be repaired recently, they will be non-functional easily.
+* The wells which have constructed in recent years are functional than older ones. And it is seen that recent years have some functional but needs repair wells. It means that if they will not be repaired recently, they will be non-functional easily.
 * There are lots of water wells which has enough water are non-functional.
 
 ## Findings and Results Gathered
