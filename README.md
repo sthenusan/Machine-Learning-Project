@@ -497,6 +497,11 @@ The **RandomForestClassifier** model gives best accuracy score among these model
 
 * I have selected Random Forest as the best solution. After that, I created validation results and submit it to the data driven competion.
 
+* Confusion matrix of the model is given below.
+
+![image](https://user-images.githubusercontent.com/46936272/133815680-9a97fcf1-448b-4b28-b8bb-79da0f4b222a.png)
+
+
 # Outcome
 
 * Before make submisiion to [Data Driven](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/23/), I need to convert back out class labels from 0,1,2 to non functional, functional needs repair and functional.
