@@ -37,7 +37,7 @@
           
 # Initial Data Exploration and Analysis
 
-1. First, we'll look over each column one by one to see what they're about and what they're meaning about.
+1. First, I'll look over each column one by one to see what they're about and what they're meaning about.
 
         Features
                 
