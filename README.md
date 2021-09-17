@@ -487,7 +487,7 @@ The **RandomForestClassifier** model gives best accuracy score among these model
 
 * I then cleaned and preprocessed the data in the following step. To reduce multicollinearity, I started by eliminating properties that held comparable information. The missing data was then processed, with ordinal type coding for those who needed it and One-Hot type for the rest. Finally, I've added new variables to the target that better characterize it.
 
-* After the preprocessing, I have selected with Logistic Regression the 80 most important variables from a total of 90 columns. Finally, various models have been checked and the results shown in a graph, obtaining that the best ones are:
+* After the preprocessing, I have selected with Logistic Regression the most important variables from total columns. Finally, various models have been checked and the results shown in the above graph, obtaining that the best ones are:
  
     * **Gradient Boosting Classifier**
 
